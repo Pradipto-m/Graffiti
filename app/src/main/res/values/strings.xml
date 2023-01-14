@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Graffiti</string>
+    <string name="search_wallpapers">Search wallpapers</string>
+    <string name="set_wallpaper">set wallpaper</string>
+    <string name="download">download</string>
+    <string name="share">share</string>
+</resources>

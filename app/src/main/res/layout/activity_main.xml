@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradientbg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:layout_marginTop="-1dp"
+        android:layout_marginStart="-2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+            />
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/etSearch"
+                android:layout_marginStart="55dp"
+                android:layout_marginEnd="45dp"
+                android:paddingTop="3dp"
+                android:hint="@string/search_wallpapers"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/white"
+            />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnSearch"
+                android:layout_marginStart="-40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_search"
+                app:tint="@color/white"
+            />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvWallpaper"
+        android:layout_below="@id/toolbar"
+        android:padding="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WallpaperActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/idPhoto"
+        android:scaleType="centerCrop"
+        android:contentDescription=""
+    />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingFab"
+        android:backgroundTint="@color/purple_500"
+        android:src="@drawable/ic_wallpaper"
+        app:tint="@color/white"
+        app:maxImageSize="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/set_wallpaper"
+    />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dwnldFab"
+        android:backgroundTint="@color/purple_500"
+        android:src="@drawable/ic_download"
+        app:tint="@color/white"
+        app:maxImageSize="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/download"
+    />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shareFab"
+        android:backgroundTint="@color/purple_500"
+        android:src="@drawable/ic_share"
+        app:tint="@color/white"
+        app:maxImageSize="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:contentDescription="@string/share"
+    />
+
+</RelativeLayout>
